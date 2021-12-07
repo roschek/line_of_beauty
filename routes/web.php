@@ -1,7 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController; 
+use App\Http\Controllers\CosmetologController;
+use App\Http\Controllers\HaircutterController;
+use App\Http\Controllers\ManicureController;
+use App\Http\Controllers\VizajeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/cosmetolog',[CosmetologController::class, 'index']);
+Route::get('/haircutter',[HaircutterController::class, 'index']);
+Route::get('/manicure', [ManicureController::class, 'index']);
+Route::get('/vizaje', [VizajeController::class, 'index']);
+
+
