@@ -13,16 +13,19 @@
 <body>
 <div class="wrapper">	
  <header class="header">
- 	<img src="images/logo.png" alt="logo" class="header__logo">
+	 <a href="/">
+	 <img src="images/logo.png" alt="logo" class="header__logo">
+	 </a>
+ 	
    <div class="header__grid">
 	<div class="header__text-block">
 		<p class="header__text">Санкт-Петербург, Съезжинская 37, м.Горьковская</p>		
 		<a href="tel:+78129858569" class="header__tel-link">+7 (812) 985-85-69</a>	
 	</div>   
   <ul class="header__nav-list">
-    <li ><a href="#" class="navigation__link">Курсы и семинары</a></li>
-    <li><a href="/" class="navigation__link">О нас</a></li>
-    <li><a href="#" class="navigation__link">Контакты</a></li>
+    <li ><a href="/" class="navigation__link">Курсы и семинары</a></li>
+    <li><a href="/about" class="navigation__link">О нас</a></li>
+    <li><a href="/contacts" class="navigation__link">Контакты</a></li>
   </ul>  
   </div>
  </header>

@@ -6,6 +6,9 @@ use App\Http\Controllers\CosmetologController;
 use App\Http\Controllers\HaircutterController;
 use App\Http\Controllers\ManicureController;
 use App\Http\Controllers\VizajeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,5 +26,6 @@ Route::get('/cosmetolog',[CosmetologController::class, 'index']);
 Route::get('/haircutter',[HaircutterController::class, 'index']);
 Route::get('/manicure', [ManicureController::class, 'index']);
 Route::get('/vizaje', [VizajeController::class, 'index']);
-
+Route::get('/about', [AboutController::class, 'index']);
+Route::get('/contacts', [ContactsController::class, 'index']);
 
