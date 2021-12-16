@@ -8,6 +8,7 @@ use App\Http\Controllers\ManicureController;
 use App\Http\Controllers\VizajeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\CardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,6 @@ Route::get('/manicure', [ManicureController::class, 'index']);
 Route::get('/vizaje', [VizajeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/contacts', [ContactsController::class, 'index']);
+Route::get('/{courses}/{id}', [CardController::class, 'getCourseCard']);
+Route::get('/{seminars}/{id}', [CardController::class, 'getSeminarCard']);
 

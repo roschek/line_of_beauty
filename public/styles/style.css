@@ -1,5 +1,6 @@
 @import url("./about/about.css");
 @import url("./contacts/contacts.css");
+@import url("./currentCard/currentCard.css");
 /*
 Theme Name: liniyakrasoty*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1016,6 +1017,14 @@ template {
   align-items: center;
   justify-content: space-between;
   width: 400px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.courses__slider-item:hover {
+  box-shadow: 20px 20px 10px rgba(182, 140, 131, 0.4);
+}
+.courses__slider_link {
+  text-decoration: none;
 }
 .price__container {
   display: flex;

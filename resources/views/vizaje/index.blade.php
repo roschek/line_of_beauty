@@ -26,7 +26,7 @@
         <div class='price__container'>
           <div class="price__wrapper">
             <p class="price__full">{{$course->price}}</p>
-            <p class="price__discount">{{$course->price_with_discount}}</p>
+            <p class="price__discount">{{$course->price_with_discount}} рублей</p>
           </div>
           <button class="courses__slider_button">записаться</button>
         </div>
@@ -59,15 +59,17 @@
     <div class="slider__noscrollable">
       @foreach($seminars as $seminar)
       <div class="courses__slider-item ">
+      <a href="/courses/{{$course->id}}" target="_blank" class="courses__slider_link">
         <img src="images/seminars/{{$seminar->image}}" alt="seminar image">       
         <p class="courses__slider-upper-time">{{$seminar->quantity_hours}}</p>
         <h3 class="courses__slider-upper-name">{{$seminar->title}}</h3>        
         <div class='price__container'>
           <div class="price__wrapper">            
-            <p class="price__discount">{{$seminar->price_with_discount}}</p>
+            <p class="price__discount">{{$seminar->price_with_discount}} рублей</p>
           </div>
           <button class="courses__slider_button">записаться</button>
         </div>
+</a>
       </div>
       @endforeach
     </div>

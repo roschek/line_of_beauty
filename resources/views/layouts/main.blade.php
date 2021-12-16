@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/style.css">
   <title>@yield('title')</title>	
 </head>
 <body>
 <div class="wrapper">	
  <header class="header">
 	 <a href="/">
-	 <img src="images/logo.png" alt="logo" class="header__logo">
+	 <img src="/images/logo.png" alt="logo" class="header__logo">
 	 </a>
  	
    <div class="header__grid">
@@ -36,7 +36,7 @@
 				<h1 class="top-slider__title">МЫ УЧИМ СОЗДАВАТЬ КРАСОТУ ПРОФЕССИОНАЛЬНО!</h1>
 				<button class="top-slider__button">запишись на курс</button>
 			</div>
-			<img src="images/slider-Image1.png" alt="haircut courses image" class="top-slider__image">
+			<img src="/images/slider-Image1.png" alt="haircut courses image" class="top-slider__image">
  </section> 
  <nav class="navigation">
  <ul class="navigation_list">
@@ -50,17 +50,17 @@
  @yield('content')
 
  <footer class="footer">
-	<img src="images/logo.png" alt="footer__logo" class="footer__logo">
+	<img src="/images/logo.png" alt="footer__logo" class="footer__logo">
 	<div class="footer__content">
 		<p class="footer__text">Санкт-Петербург
 		Съезжинская улица, 37, м.Горьковская</p>
 		<a href="mailto:studia@linia-krasoty.ru" class="footer__mail">Email: studia@linia-krasoty.ru</a>
 		<ul class="footer__links">
-			<li class="footer__item"><a href="#" class="footer__link"><img src="images/social/fb.svg" alt="fb link" class="footer__image"></li>
-			<li class="footer__item"><a href="#" class="footer__link"><img src="images/social/inst.svg" alt="inst link" class="footer__image"></li>
-			<li class="footer__item"><a href="#" class="footer__link"><img src="images/social/mail.svg" alt="mail link" class="footer__image"></li>
-			<li class="footer__item"><a href="#" class="footer__link"><img src="images/social/vk.svg" alt="vk link" class="footer__image"></li>
-			<li class="footer__item"><a href="#" class="footer__link"><img src="images/social/whatsapp.svg" alt="whatsapp link" class="footer__image"></li>
+			<li class="footer__item"><a href="#" class="footer__link"><img src="/images/social/fb.svg" alt="fb link" class="footer__image"></li>
+			<li class="footer__item"><a href="#" class="footer__link"><img src="/images/social/inst.svg" alt="inst link" class="footer__image"></li>
+			<li class="footer__item"><a href="#" class="footer__link"><img src="/images/social/mail.svg" alt="mail link" class="footer__image"></li>
+			<li class="footer__item"><a href="#" class="footer__link"><img src="/images/social/vk.svg" alt="vk link" class="footer__image"></li>
+			<li class="footer__item"><a href="#" class="footer__link"><img src="/images/social/whatsapp.svg" alt="whatsapp link" class="footer__image"></li>
 		</ul>		
 	</div>
 	<ul class="footer__phones">

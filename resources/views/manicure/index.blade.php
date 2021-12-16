@@ -7,6 +7,7 @@
 
 
  <main>
+  $item
   <section class="disclaimer">
     <p class="disclaimer__text">В соответствии с приказом Министерства образования и науки Российской Федерации от 1 июля 2013 г. N 499 "Об утверждении порядка организации и осуществления образовательной деятельности по дополнительным профессиональным программам" (зарегистрирован Минюстом России 20 августа 2013 г., регистрационный N 29444), минимально допустимый срок освоения программ профессиональной переподготовки – не менее 250 часов. Данные о выдаваемых документах о дополнительном профессиональном образовании вносятся в ФИС ФРДО - Федеральный реестр сведений документов об образовании и (или) о квалификации, документах об обучении.</p>
   </section>
@@ -18,6 +19,7 @@
     <div class="slider__noscrollable">
       @foreach($courses as $course)
       <div class="courses__slider-item">
+        <a href="/courses/{{$course->id}}" target="_blank" class="courses__slider_link">
         <img src="images/courses_img/{{$course->image}}" alt="course image">
         <p class="courses__slider-upper-title">курс</p>
         <p class="courses__slider-upper-time">{{$course->quantity_hours}}</p>
@@ -26,10 +28,11 @@
         <div class='price__container'>
           <div class="price__wrapper">
             <p class="price__full">{{$course->price}}</p>
-            <p class="price__discount">{{$course->price_with_discount}}</p>
+            <p class="price__discount">{{$course->price_with_discount}} рублей</p>
           </div>
           <button class="courses__slider_button">записаться</button>
         </div>
+        </a>
       </div>
       @endforeach
     </div>
@@ -59,15 +62,17 @@
     <div class="slider__noscrollable">
       @foreach($seminars as $seminar)
       <div class="courses__slider-item ">
+      <a href="/seminars/{{$seminar->id}}" target="_blank" class="courses__slider_link">
         <img src="images/seminars/{{$seminar->image}}" alt="seminar image">       
         <p class="courses__slider-upper-time">{{$seminar->quantity_hours}}</p>
         <h3 class="courses__slider-upper-name">{{$seminar->title}}</h3>        
         <div class='price__container'>
           <div class="price__wrapper">            
-            <p class="price__discount">{{$seminar->price_with_discount}}</p>
+            <p class="price__discount">{{$seminar->price_with_discount}} рублей</p>
           </div>
           <button class="courses__slider_button">записаться</button>
         </div>
+      </a>
       </div>
       @endforeach
     </div>  
